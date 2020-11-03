@@ -1,3 +1,8 @@
+<p align="center"></p>
+<a href="https://sultanzio.github.io" target="_blank">
+  <img src="https://raw.githubusercontent.com/sultanzio/sultanzio/main/corsair-wallpaper-previewf.jpg">
+</a>
+</p>
 ### Hi There, i am Bagus👋
 
 I am Bagus Lindu Pamungkas. I am an undergraduate student of Informatics at University Technology of Yogyakarta. I love to learn anything about cyber security!
@@ -6,8 +11,11 @@ I am Bagus Lindu Pamungkas. I am an undergraduate student of Informatics at Univ
 - 📌 Yogyakarta, Indonesia
 - 📎 INDONESIAN OFFENSIVE SECURITY | https://fb.com/ios.sec
 
-## GitHub Stats
-<p>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sultanzio&hide_border=true&hide=html,css" />
-  <img src="https://github-readme-stats.vercel.app/api?username=sultanzio&line_height=27&count_private=true&hide_border=true&show_icons=true">
+---
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sultanzio&show_icons=true&theme=blue-green">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sultanzio&show_icons=true&theme=blue-green&layout=compact">
 </p>
+
+---
