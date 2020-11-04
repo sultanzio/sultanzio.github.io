@@ -24,6 +24,4 @@ I am Bagus Lindu Pamungkas. I am an undergraduate student of Informatics at Univ
 </p>
 
 ---
-<div class="sharethis-inline-follow-buttons"></div>
-<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fa22ac490c74500124aab75&product=inline-follow-buttons" async="async">
-</script>
+<div class="fb-follow" data-href="[URL of Your Profile]" data-layout="button_count" data-show-faces="[Enable / Disable Showing Faces]" data-colorscheme="[Color Scheme of Plugin]" data-font="[Font Family]" data-width="[Width in Pixels]"></div>
