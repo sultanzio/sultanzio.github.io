@@ -8,7 +8,7 @@
 ### Hi There, i am Bagus👋
 
 
-I am Bagus Lindu Pamungkas. I am an undergraduate student of Informatics at University Technology of Yogyakarta. I love to learn anything about cyber security!
+I am Bagus Lindu Pamungkas. I am an undergraduate student of Informatics at University Technology of Yogyakarta. I love to learn anything about web development, UI, and web security.
 - 📘 Linkedin  : https://www.linkedin.com/in/bagus-lindu-pamungkas-26b71718a
 - 🌐 Instagram : https://instagram.com/baguslindu_
 - 📌 Yogyakarta, Indonesia
