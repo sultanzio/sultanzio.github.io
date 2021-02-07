@@ -7,8 +7,10 @@
 
 ### Hi There, i am Bagus👋
 
-
 I am Bagus Lindu Pamungkas. I am an undergraduate student of Informatics at University Technology of Yogyakarta. I love to learn anything about web development, UI, and web security.
+
+### About me : 
+
 - 📘 Linkedin  : https://www.linkedin.com/in/bagus-lindu-pamungkas-26b71718a
 - 🌐 Instagram : https://instagram.com/baguslindu_
 - 📌 Yogyakarta, Indonesia
@@ -17,11 +19,9 @@ I am Bagus Lindu Pamungkas. I am an undergraduate student of Informatics at Univ
 
 ### Github Stats
 
-
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=sultanzio&show_icons=true&theme=blue-green">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sultanzio&show_icons=true&theme=blue-green&layout=compact">
-</p>
-
----
-<div class="fb-follow" data-href="[URL of Your Profile]" data-layout="button_count" data-show-faces="[Enable / Disable Showing Faces]" data-colorscheme="[Color Scheme of Plugin]" data-font="[Font Family]" data-width="[Width in Pixels]"></div>
+  <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username="sultanzio" alt="sultanzio" />
+  </a>
+  </p>
