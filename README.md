@@ -5,7 +5,8 @@
 </p>
 
 
-## Hi There, i am Bagus Lindu👋
+## Hi There, i am Bagus Lindu <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="20px">
+
 
 I am Bagus Lindu Pamungkas. I am an undergraduate student of Informatics at University Technology of Yogyakarta. I love to learn anything about web development, UI, and web security.
 
