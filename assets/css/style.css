@@ -1,0 +1,1521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFBEF;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    padding: 1vw 4vw;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #000;
+    background: rgba(255, 251, 239, 0.50);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    /* Z-index tinggi untuk navbar */
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(15px);
+    /* Efek blur untuk navbar */
+    z-index: -1;
+    /* Lapisan blur berada di belakang konten navbar */
+}
+
+.logo {
+    flex-shrink: 0;
+    width: 8rem;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+
+.menu-item {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu-item.active {
+    font-weight: 600;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 4vw;
+    flex-wrap: wrap;
+    margin-top: 6.5vw;
+}
+
+.hero-column {
+    flex: 1;
+}
+
+.hero-column.content-wrapper {
+    padding: 1rem 2rem;
+    border: 1px solid #43B0F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+}
+
+.rectangle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #43B0F1;
+}
+
+.rectangle.top-left {
+    left: -6px;
+    top: -6px;
+}
+
+.rectangle.top-right {
+    right: -6px;
+    top: -6px;
+}
+
+.rectangle.bottom-left {
+    left: -6px;
+    bottom: -6px;
+}
+
+.rectangle.bottom-right {
+    right: -6px;
+    bottom: -6px;
+}
+
+.intro {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.highlight {
+    font-weight: 600;
+}
+
+.headline {
+    color: #000;
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 400;
+}
+
+.button-group {
+    display: flex;
+    gap: 24px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+.btn.contact {
+    background: #000;
+    color: #FFF;
+}
+
+.btn.cv {
+    background: transparent;
+    color: #000;
+}
+
+.hero-column.image {
+    flex-basis: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile-image {
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+}
+
+.floating-element {
+    position: absolute;
+}
+
+.svg-element {
+    top: 15%;
+    left: 2%;
+    width: 1rem;
+}
+
+.svg-element svg {
+    width: 10vw;
+}
+
+.four-years-badge {
+    bottom: 2%;
+    left: 10%;
+}
+
+.four-years-badge img {
+    width: 10vw;
+}
+
+.hundred-badge {
+    top: 20%;
+    right: 2%;
+}
+
+.hundred-badge img {
+    width: 13vw;
+}
+
+.mission-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4vw;
+}
+
+.mission-title {
+    color: #000;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mission-cards {
+    display: flex;
+    justify-content: space-between;
+    /* Pastikan kartu memiliki jarak yang sama */
+    gap: 20px;
+    /* Ruang antara kartu */
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    background: #F5EBD7;
+    box-shadow: 4px 4px 0px 0px #000;
+    flex: 1;
+    height: auto;
+    padding: 3rem;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+}
+
+.card-icon {
+    margin: 0;
+    padding: 0;
+}
+
+.card-icon svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card-icon.pertama {
+    background: #FFFF80;
+}
+
+.card-icon.kedua {
+    background: #FBA979;
+}
+
+.card-icon.ketiga {
+    background: #80FFEA;
+}
+
+.card-text {
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* Vision Section */
+.vision-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 40px;
+}
+
+.vision-title {
+    color: #000;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.vision-card {
+    flex: 1 1 auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFCA80;
+    box-shadow: 4px 4px 0px 0px #000;
+    width: 100%;
+}
+
+.vision-card-text {
+    padding: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000;
+}
+
+/* Section UI/UX Tutorial */
+.uiux-tutorials-section {
+    padding: 8rem 3rem 0 3rem;
+    text-align: center;
+}
+
+.uiux-tutorials-header {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.uiux-tutorials-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.uiux-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #F5EBD7;
+    box-shadow: 4px 4px 0px 0px #000;
+    position: relative;
+    height: 100%;
+    max-width: 12rem;
+}
+
+.uiux-icon {
+    display: flex;
+    padding: 22.456px;
+    align-items: flex-start;
+    gap: 7.018px;
+    border-radius: 100rem;
+    border: 0.702px solid #000;
+}
+
+.uiux-card-text {
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.uiux-author-text {
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.uiux-image {
+    height: 95%;
+    position: absolute;
+    left: 4%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    object-fit: cover;
+}
+
+.uiux-card:hover {
+    transform: rotate(10deg);
+    transition: all 0.3s ease;
+}
+
+.uiux-card::before {
+    content: 'Open Book';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.uiux-card:hover::before {
+    opacity: 1;
+}
+
+.hidden-text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.uiux-card:hover .hidden-text {
+    opacity: 1;
+}
+
+/* Section Latest Design */
+.unique-latest-design {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Pembungkus Teks dan Rectangle */
+.unique-text-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.unique-latest-design-text {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1 0 0;
+    padding-left: 4vw;
+}
+
+.unique-rectangle {
+    width: 6rem;
+    height: 0.125rem;
+    background: #000;
+}
+
+.unique-latest-design-text>span {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.unique-mobile-design-text {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 4vw;
+}
+
+/* Pembungkus Card dan Tombol */
+.set-one-card-wrapper {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.unique-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.unique-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    height: 400px;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 4px 4px 0px 0px #000;
+}
+
+.unique-card .unique-image {
+    flex: 1;
+    /* Membuat gambar mengisi ruang yang tersedia */
+    align-self: stretch;
+    /* Memastikan gambar memenuhi lebar kontainer */
+    border-radius: 0.5rem;
+    background: lightgray 50% / cover no-repeat;
+
+}
+
+.unique-card-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.unique-icon-text-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.unique-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.unique-icon svg {
+    width: 24px;
+    height: 25px;
+}
+
+.unique-icon>span {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Bagian teks dan tombol */
+.unique-card-title-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    flex-shrink: 1;
+}
+
+.unique-card-title {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-right: 0.2rem;
+    flex-shrink: 1;
+}
+
+.unique-link-button {
+    display: flex;
+    padding: 0.8rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8.411px;
+    border: 1.051px solid #000;
+    background: #43B0F1;
+}
+
+.unique-link-button svg {
+    width: 24px;
+    height: 25px;
+}
+
+.unique-link-button span {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Tombol More Designs */
+.unique-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.unique-more-designs-button {
+    display: flex;
+    padding: 1.2rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: #8A94F8;
+}
+
+.unique-more-designs-button svg {
+    width: 25px;
+    height: 24px;
+}
+
+.unique-more-designs-button>span {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Section Creations */
+.unique-text-wrapper-figma {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.unique-figma-design-text {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 4vw;
+}
+
+.unique-creations-text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-right: 4vw;
+}
+
+.unique-rectangle-figma {
+    width: 94px;
+    height: 2px;
+    background: #000;
+}
+
+.unique-creations-text>span {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.unique-plugins-design-text {
+    color: #000;
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 4vw;
+}
+
+/* Set Kedua */
+.set-two-card-wrapper {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.coming-soon-wrapper {
+    flex-basis: 30%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    opacity: 0.2;
+    background: #FFF;
+}
+
+.coming-soon-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.coming-soon-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Bagian CSS */
+.experience-collaboration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.experience-collaboration-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.experience-collaboration-text h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.experience-collaboration-underline {
+    width: 6rem;
+    height: 0.125rem;
+    background: #000;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.experience-collaboration-text h1 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.experience-collaboration-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.collaboration-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    max-width: 300px;
+}
+
+.collaboration-card-image {
+    flex: 1 0 auto;
+    height: 100px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+
+.collaboration-card {
+    transition: transform 0.3s ease-in-out;
+    mix-blend-mode: multiply;
+}
+
+.collaboration-card:hover {
+    transform: translateY(-12px);
+    mix-blend-mode: multiply;
+}
+
+.collaboration-card h3 {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.125rem;
+}
+
+.collaboration-card a {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 0.125rem;
+}
+
+.collaboration-card a:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.2s
+}
+
+/* CSS Contact */
+.contact-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-card {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    background: #F5EBD7;
+    box-shadow: 4px 4px 0px 0px #000;
+}
+
+.icon-wrapper {
+    display: flex;
+    padding: 1.5rem;
+    align-items: flex-start;
+    gap: 7.018px;
+    border-radius: 100rem;
+    border: 1px solid #000;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.text-header {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text-content {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer {
+    display: flex;
+    height: 94px;
+    padding: 1rem 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-top: 1px solid #000;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.footer p {
+    color: #4F4F4F;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.footer strong {
+    font-weight: 700;
+}
+
+.hero-column image {
+    position: relative;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Sembunyikan pada layar lebar */
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 2vw 4vw;
+        gap: 10px;
+    }
+
+    .navbar a,
+    .navbar .menu {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 6rem;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        /* Pastikan posisi relatif untuk penempatan yang tepat */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Tengah vertikal */
+        align-items: center;
+        /* Tengah horizontal */
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        position: absolute;
+        width: 24px;
+        height: 3px;
+        border-radius: 4px;
+        background: #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Posisi awal span untuk menghasilkan garis hamburger */
+    .hamburger-menu span:nth-child(1) {
+        transform: translateY(-8px);
+        /* Posisi span pertama */
+    }
+
+    .hamburger-menu span:nth-child(2) {
+        transform: translateY(0);
+        /* Posisi span kedua */
+    }
+
+    .hamburger-menu span:nth-child(3) {
+        transform: translateY(8px);
+        /* Posisi span ketiga */
+    }
+
+    /* Saat hamburger menu aktif, membentuk tanda silang */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: translateX(60px);
+        /* Memindahkan span pertama ke luar */
+        opacity: 0;
+        /* Menyembunyikan span pertama */
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        transform: rotate(45deg);
+        /* Memutar span kedua */
+        transition-delay: 0.2s;
+        /* Menambahkan sedikit delay */
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        /* Memutar span ketiga */
+        transition-delay: 0.4s;
+        /* Menambahkan delay lebih lama */
+    }
+
+
+    /* Menu yang muncul saat hamburger menu aktif */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 100%;
+        padding: 10px;
+        background: rgba(255, 251, 239, 0.75);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        z-index: 90;
+        /* Z-index lebih rendah daripada navbar */
+    }
+
+    /* Efek blur untuk menu menggunakan pseudo-elemen */
+    .hamburger-menu.active+.menu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(15px);
+        /* Efek blur untuk menu */
+        z-index: -1;
+        /* Pseudo-elemen berada di belakang konten menu */
+    }
+
+    /* Saat hamburger menu aktif, tampilkan menu */
+    .hamburger-menu.active+.menu {
+        display: flex;
+    }
+
+    /* Pengaturan menu-item */
+    .menu-item {
+        padding: 10px 0;
+        /* Ruang antar item */
+        text-align: center;
+        /* Rata tengah */
+        border-bottom: 1px solid #ddd;
+        font-size: 0.9rem;
+        /* Batas bawah */
+    }
+
+    .menu-item:last-child {
+        border-bottom: none;
+        /* Tidak ada batas pada item terakhir */
+    }
+
+
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 4vw;
+        margin-top: 20vw;
+
+    }
+
+    .hero-column.content-wrapper {
+        padding: 0.5rem 1rem;
+        border-width: 0.5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        position: relative;
+        height: 220px;
+        /* Tinggi tetap untuk memastikan tata letak tidak bergeser */
+    }
+
+    .hero-column.image {
+        padding: 1rem;
+    }
+
+    .profile-image {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .floating-element {
+        position: absolute;
+    }
+
+    .svg-element {
+        top: 15%;
+        left: 2%;
+    }
+
+    .svg-element svg {
+        width: 24vw;
+    }
+
+    .four-years-badge {
+        bottom: 2%;
+        left: 10%;
+    }
+
+    .four-years-badge img {
+        width: 28vw;
+    }
+
+    .hundred-badge {
+        top: 20%;
+        right: 2%;
+    }
+
+    .hundred-badge img {
+        width: 32vw;
+    }
+
+    .bagus-badge img {
+        width: 40vw;
+    }
+
+    .rectangle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .intro {
+        font-size: 1rem;
+        /* Ukuran font */
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .headline {
+        font-size: 2.75rem;
+        /* Meningkatkan ukuran headline */
+        line-height: 3.5rem;
+        /* Menyesuaikan line-height */
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Pusatkan tombol secara horizontal */
+        gap: 12px;
+        /* Jarak antar-tombol */
+        width: 100%;
+    }
+
+    .btn {
+        padding: 14px 16px;
+        /* Padding tombol */
+        border-radius: 6px;
+        /* Border radius */
+        font-size: 1rem;
+        /* Ukuran font */
+        text-align: center;
+        /* Pastikan teks berada di tengah */
+    }
+
+    .btn.contact {
+        background: #000;
+        color: #FFF;
+
+
+    }
+
+    .btn.cv {
+        background: transparent;
+        color: #000;
+        border: #333 1px solid;
+
+    }
+
+    .btn.contact svg,
+    .btn.cv svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .mission-title,
+    .vision-title,
+    .uiux-tutorials-header,
+    .experience-collaboration-text h1 {
+        font-size: 2rem;
+    }
+
+    .mission-cards {
+        flex-direction: column;
+        /* Ubah ke tata letak kolom */
+        align-items: center;
+        /* Menyelaraskan card ke tengah */
+    }
+
+    .card {
+        flex-direction: column;
+        /* Tata letak internal berubah */
+        padding: 1rem 0.5rem;
+        /* Sedikit kurangi padding */
+        margin-bottom: 1rem;
+        /* Tambahkan jarak di antara card */
+        width: 100%;
+    }
+
+    .card-icon {
+        margin-bottom: 0.75rem;
+        /* Beri jarak lebih besar di bawah icon */
+    }
+
+    .card-text,
+    .vision-card-text {
+        font-size: 1.25rem;
+    }
+
+    .vision-card-text {
+        flex-direction: column;
+        /* Tata letak internal berubah */
+        padding: 1rem 0.5rem;
+        /* Sedikit kurangi padding */
+    }
+
+    .vision-section,
+    .mission-section {
+        padding-top: 40px;
+    }
+
+    .uiux-tutorials-section {
+        padding-top: 80px;
+    }
+
+    .uiux-tutorials-cards {
+        flex-direction: column;
+        /* Mengatur kartu agar vertikal */
+        gap: 2rem;
+        /* Mengurangi jarak antar kartu */
+    }
+
+    .uiux-card {
+        max-height: 100%;
+        /* Memastikan kartu mengisi lebar penuh */
+        padding: 1rem;
+        /* Mengurangi padding */
+    }
+
+
+    .unique-text-wrapper,
+    .unique-text-wrapper-figma {
+        padding: 0;
+        /* Remove padding to ensure centering */
+        flex-direction: column;
+        /* Arrange content vertically */
+        justify-content: center;
+        /* Center vertically */
+        align-items: center;
+        /* Center horizontally */
+    }
+
+    .unique-latest-design-text,
+    .unique-creations-text {
+        display: flex;
+        /* Ensure flex layout */
+        flex-direction: column-reverse;
+        /* Ensure span is above the rectangle */
+        align-items: center;
+        /* Center-align elements */
+        padding: 0;
+        /* Remove padding to center properly */
+        gap: 0;
+        /* Remove gap for precise centering */
+    }
+
+    .unique-latest-design-text span,
+    .unique-creations-text span {
+        font-size: 2rem;
+        /* Font size for 'Latest Design' text */
+        margin-bottom: 10px;
+        /* Add spacing between text and rectangle */
+    }
+
+    .unique-card-wrapper {
+        display: flex;
+        /* Ubah menjadi flex */
+        flex-direction: column;
+        /* Membuat elemen turun menjadi satu kolom */
+        gap: 20px;
+    }
+
+    .unique-card {
+        height: 400px;
+        /* Biarkan ketinggian menyesuaikan */
+        box-shadow: 2px 2px 0px 0px #000;
+        /* Mengurangi bayangan */
+    }
+
+    .unique-card .unique-image {
+        border-radius: 0.25rem;
+        /* Mengurangi radius sudut */
+    }
+
+    .unique-rectangle,
+    .experience-collaboration-underline {
+        width: 50%;
+        /* Full-width for the rectangle */
+        height: 0.125rem;
+        /* Height for the rectangle */
+        background: #000;
+        /* Black color */
+    }
+
+    .unique-mobile-design-text {
+        font-size: 1.25rem;
+        /* Font size for 'Mobile Designs' */
+        text-align: center;
+        padding: 0;
+    }
+
+    .unique-figma-design-text {
+        font-size: 1.25rem;
+        /* Font size for 'Mobile Designs' */
+        text-align: center;
+        padding: 0;
+        padding-top: 14px;
+    }
+
+    /* Reverse the order of the divs */
+    .unique-figma-design-text {
+        order: 2;
+        /* Set this div to come second */
+    }
+
+    .unique-creations-text {
+        order: 1;
+        /* Set this div to come first */
+    }
+
+
+    .unique-more-designs-button {
+        padding: 0.8rem 1.5rem;
+        /* Mengurangi padding untuk layar lebih kecil */
+        gap: 5px;
+        /* Mengurangi jarak antara elemen */
+        border-radius: 6px;
+        /* Mengurangi sudut melengkung */
+    }
+
+
+    .unique-more-designs-button>span {
+        font-size: 0.875rem;
+        /* Mengurangi ukuran font */
+    }
+
+    .experience-collaboration-text h2 {
+        font-size: 1.25rem;
+    }
+
+    /* Kontainer utama untuk pengalaman kolaborasi */
+    .experience-collaboration {
+        position: relative;
+        padding-left: 4vw;
+        /* Padding kiri */
+        padding-right: 4vw;
+        /* Padding kanan */
+        overflow-x: auto;
+        /* Mengizinkan pengguliran horizontal */
+        overflow-y: hidden;
+        /* Mencegah scrollbar vertikal */
+        white-space: nowrap;
+    }
+
+
+    /* Kontainer kartu dengan flex-direction: row dan ruang tambahan di ujung */
+    .experience-collaboration-cards {
+        display: flex;
+        /* Pastikan tata letak flex */
+        flex-direction: row;
+        /* Sejajarkan secara horizontal */
+        flex-wrap: nowrap;
+        /* Mencegah pembungkusan */
+        white-space: nowrap;
+        /* Mencegah pembungkusan */
+        padding-bottom: 1rem;
+        animation: marquee 15s linear infinite;
+        /* Efek marquee dengan animasi */
+        padding-right: 0%;
+        padding-left: 150%;
+        mix-blend-mode: multiply;
+        /* Ruang ekstra di ujung untuk memastikan tidak terpotong */
+    }
+
+    .collaboration-card {
+        flex: 0 0 auto;
+        /* Mencegah penyusutan otomatis */
+        width: 250px;
+    }
+
+    /* Efek marquee untuk menggeser konten secara horizontal */
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+            /* Posisi awal */
+        }
+
+        to {
+            transform: translateX(-100%);
+            /* Geser ke kiri hingga keluar */
+        }
+    }
+
+    .contact-me-container {
+        flex-direction: column;
+        /* Stack elements vertically */
+        gap: 10px;
+        /* Reduce gap between elements */
+    }
+
+    .contact-card {
+        padding: 1rem;
+        /* Reduce padding */
+        border: 1px solid #000;
+        /* Keep border but reduce box shadow */
+        box-shadow: 2px 2px 0px 0px #000;
+        /* Reduce shadow effect */
+    }
+
+    .icon-wrapper {
+        padding: 1rem;
+        /* Reduce icon wrapper padding */
+    }
+
+    .text-header {
+        font-size: 1rem;
+        /* Reduce header font size */
+    }
+
+    .text-content {
+        font-size: 0.875rem;
+        /* Reduce content font size */
+    }
+
+    .footer {
+        flex-direction: column;
+        /* Menyusun elemen secara vertikal */
+        height: auto;
+        /* Biarkan ketinggian menyesuaikan */
+        padding: 1rem 2rem;
+        /* Mengurangi padding di samping */
+        margin-top: 4rem;
+        /* Mengurangi margin atas */
+    }
+
+    .footer p {
+        font-size: 0.875rem;
+        /* Mengurangi ukuran font */
+        line-height: 1.2;
+        /* Menyusutkan line-height */
+    }
+
+    .footer strong {
+        font-size: 0.875rem;
+        /* Samakan ukuran font dengan teks biasa */
+    }
+}
+
+/* Tablet / Small Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Gaya untuk tablet */
+}
+
+/* Tablet / Small Desktop */
+@media (min-width: 769px) and (max-width: 1024px) {}
+
+/* Medium Desktop / Laptop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Gaya untuk laptop / desktop sedang */
+}
+
+/* Large Desktop */
+@media (min-width: 1281px) and (max-width: 1600px) {
+    /* Gaya untuk desktop besar */
+}
+
+/* Extra Large Desktop / Large Screens */
+@media (min-width: 1601px) {
+    /* Gaya untuk layar ekstra besar */
+}
